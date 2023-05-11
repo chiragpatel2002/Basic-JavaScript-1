@@ -1,0 +1,105 @@
+/* --------------------------------------------- BackGround ---------------------------------------------*/
+
+body {
+    background: -webkit-linear-gradient(360deg, #949494 10%, #efefef 360%);
+    background: linear-gradient(360deg, #949494 10%, #efefef 360%);
+}
+
+/* --------------------------------------------- Side spacing ---------------------------------------------*/
+
+.container {
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+/* --------------------------------------------- top heading style ---------------------------------------------*/
+
+p {
+    font-size: 30px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* --------------------------------------------- Button style ---------------------------------------------*/
+
+button {
+    background-color: black;
+    color: white;
+    margin: 8px 0;
+    padding: 4px 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    transform: translate(0, -5%);
+    box-shadow: rgb(0, 255, 98) 0px 50px 100px -20px, rgb(0, 255, 0) 0px 30px 60px -30px;
+}
+button:disabled {
+    background-color: white;
+    color: red;
+    border: solid 2px red;
+}
+
+/* --------------------------------------------- Input field style ---------------------------------------------*/
+
+input {
+    border: solid 3px black;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    margin-left: 30px;
+    max-width: 177px;
+    width: 100%;
+}
+input:focus, input:active, input:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+}
+
+/* --------------------------------------------- Partition style ---------------------------------------------*/
+
+hr {
+
+    border-color: gray;
+}
+
+/* --------------------------------------------- icon style ---------------------------------------------*/
+
+i{
+   
+    float: right;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    /* transition: transform 7s; */
+}
+.icon{
+    padding: 10px;
+}
+
+/* --------------------------------------------- Responsive ---------------------------------------------*/
+
+@media screen and (max-width:449px) {
+    input {
+        margin-left: 0;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    span {
+        display: block;
+    }
+
+}
